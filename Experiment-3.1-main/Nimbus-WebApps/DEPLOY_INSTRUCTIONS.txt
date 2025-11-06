@@ -1,0 +1,11 @@
+# Deployment Instructions (short)
+1. Run the SQL script `sql/schema.sql` in your MySQL server to create database and tables.
+2. Build Java servlets:
+   - Compile .java files (you can use `javac` or import project into your IDE).
+   - Place compiled classes under `WEB-INF/classes/com/...` mirroring the package structure.
+3. Add MySQL Connector/J jar into `WEB-INF/lib/` or Tomcat's `lib/`.
+4. Deploy each folder (`PartA_UserLogin`, `PartB_EmployeeRecords`, `PartC_AttendancePortal`) into Tomcat's `webapps/` directory and start Tomcat.
+5. Access:
+   - Part A: http://localhost:8080/PartA_UserLogin/index.html
+   - Part B: http://localhost:8080/PartB_EmployeeRecords/index.html
+   - Part C: http://localhost:8080/PartC_AttendancePortal/attendance.jsp
